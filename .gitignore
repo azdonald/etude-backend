@@ -1,0 +1,5 @@
+.vscode/
+app/*.pyc
+app/__pycache__/*.pyc
+=3.0
+=3
