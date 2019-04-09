@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 
 
@@ -10,7 +13,8 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'etude_dev.db')
+    #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'etude_dev.db')
+    SQLALCHEMY_DATABASE_URI = os.environ['ETUDE_DATABASE_URL']
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class TestingConfig(Config):

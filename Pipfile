@@ -14,9 +14,10 @@ flask-script = "*"
 flask-bcrypt = "*"
 pymysql = "*"
 flask-testing = "*"
-marshmallow = ">=3.0.0rc1"
+marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 flask-jwt-extended = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.6"
